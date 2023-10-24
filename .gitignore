@@ -117,6 +117,7 @@ celerybeat.pid
 env/
 venv/
 ENV/
+djVirtEnv/
 env.bak/
 venv.bak/
 
