@@ -116,6 +116,7 @@ celerybeat.pid
 .venv
 env/
 venv/
+AssetTracker/dvenv
 ENV/
 djVirtEnv/
 env.bak/

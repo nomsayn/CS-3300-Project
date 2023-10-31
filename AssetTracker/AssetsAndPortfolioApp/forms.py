@@ -4,4 +4,4 @@ from .models import WebSiteUser
 class UserForm(ModelForm):
     class Meta:
         model = WebSiteUser
-        fields = ['name', 'email', 'financial_experience']
+        fields = ['name', 'email', 'platform']
