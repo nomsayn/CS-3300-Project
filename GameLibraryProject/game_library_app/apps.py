@@ -1,6 +1,6 @@
 from django.apps import AppConfig
 
 
-class AssetsandportfolioappConfig(AppConfig):
+class GameLibraryAppConfig(AppConfig):
     default_auto_field = 'django.db.models.BigAutoField'
-    name = 'AssetsAndPortfolioApp'
+    name = 'game_library_app'
