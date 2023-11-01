@@ -1,0 +1,12 @@
+<!-- inherit from base.html -->
+{% extends 'game_library_app/main_template.html' %}
+
+<!-- Replace block content in base_template.html -->
+{% block content %}
+    <div class="container">
+        <h1>Game Library Manager</h1>
+        <br>
+        {% comment %} Button to create new user {% endcomment %}
+        <a href="{% url 'create_user' %}" class="btn btn-primary">Create New User</a>
+    </div>
+{% endblock %}

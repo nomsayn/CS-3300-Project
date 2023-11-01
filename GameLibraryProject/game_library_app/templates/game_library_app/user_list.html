@@ -1,0 +1,20 @@
+{% extends 'game_library_app/main_template.html' %}
+
+{% block content %}
+    <h1>Current Users:</h1>
+
+    <!-- If there are users in the database -->
+    {% if user_list %}
+        <ul> <!-- <ul> - Unordered List -->
+            {% for user in user_list %} <!-- Loops through each student in user_list -->
+                <li>
+                {{ user.name }}
+                </li>
+            {% endfor %}
+        </ul>
+
+    {% else %}
+        <p>There are no registered users currently.</p>
+    {% endif %}
+
+{% endblock %}
