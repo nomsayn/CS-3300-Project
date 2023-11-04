@@ -1,0 +1,15 @@
+{% extends 'game_library_app/main_template.html' %}
+
+{% block content %}
+    <h1>User Profile: {{ siteuser.name }}</h1>
+    <h2>Primary Console: {{ siteuser.platform }}</h2>
+    <h2>Game Libraries:</h2>
+    <ol>
+        {% for library in game_libraries %}
+            <li>{{ library.title }}</li>
+            <li><a href="{{ library.get_absolute_url }}">{{ library.title }}</a></li>
+        {% endfor %}
+    </ol>
+
+
+{% endblock %}

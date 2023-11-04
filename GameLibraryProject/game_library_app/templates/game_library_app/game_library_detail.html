@@ -1,0 +1,14 @@
+{% extends 'game_library_app/main_template.html' %}
+
+{% block content %}
+    <h1>Game Library</h1>
+    <p>Here is a list of all the games in the library:</p>
+    <ul>
+        {% for game in games %}
+            <li>{{ game.title }} - {{ game.date_added }}</li>
+        {% endfor %}
+    </ul>
+    {% comment %} <a href="/game_library/add_game">Add a new game</a> {% endcomment %}
+
+
+{% endblock %}
