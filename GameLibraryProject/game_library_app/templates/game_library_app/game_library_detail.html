@@ -1,6 +1,7 @@
 {% extends 'game_library_app/main_template.html' %}
 
 {% block content %}
+<div class="container">
     <h1>{{ gamelibrary.title }}</h1>
     <h5>Games in Library:</h5>
     <ul>
@@ -9,6 +10,6 @@
         {% endfor %}
     </ul>
     <a href="{% url 'add_game_to_library' pk=game_library_id %}" class="btn btn-primary">Add a new game</a>
-
+</div>
 
 {% endblock %}

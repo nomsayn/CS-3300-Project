@@ -8,10 +8,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     {% load bootstrap5 %}
     {% bootstrap_css %}
+    <link href="{% static 'customBootstrap.css' %}" rel="stylesheet">
     {% bootstrap_javascript %}
 </head>
 
-<body>
+<body class="custom-background">
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
